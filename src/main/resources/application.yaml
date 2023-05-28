@@ -1,0 +1,23 @@
+
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.MySQL57Dialect
+    show-sql: true
+    properties:
+      hibernate:
+        globally_quoted_identifiers: true
+
+  application:
+    name: hack
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/hackdb?useSSL=false
+    username: root
+    password:
+
+  thymeleaf:
+    cache: false
+    suffix: .html
+
